@@ -18,8 +18,8 @@ function App() {
     <div>
       <Routes>
         <Route element={<Layout />}>
-        <Route  path='/' element={<ProductListing />}/>
-        <Route path='/products/:id' element={<ProductDetails />}/>
+        <Route  path='/' element={<ProductListing />} />
+        <Route path='/product/:productId' element={<ProductDetails />} />
         </Route>
       </Routes>
     </div>

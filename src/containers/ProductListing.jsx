@@ -5,7 +5,7 @@ import ProductComponent from './ProductComponent';
 import { setProducts } from '../redux/actions/productAction.js';
 
 const ProductListing = () => {
-  const products = useSelector((state) => state);
+  const products = useSelector((state) => state.allProducts);
   const dispatch = useDispatch();
   const api = 'https://fakestoreapi.com/products';
 
